@@ -75,13 +75,32 @@ def summarize(sections):
             used = set()
             for row in parsed.get(section, []):
                 index = row.get("index")
-                summary = row.get("summary")
-                if type(index) is int and 0 <= index < len(items) and index not in used and isinstance(summary, str):
+                if type(index) is int and 0 <= index < len(items) and index not in used:
                     used.add(index)
-                    selected.append({**items[index], "summary": summary[:160]})
+                    selected.append(items[index].copy())
                 if len(selected) >= 5:
                     break
             output[section] = selected or items[:5]
+        # Summarize each selected headline in isolation. A batch answer can attach
+        # one article's summary to another article even when its index is valid.
+        for items in output.values():
+            for item in items:
+                try:
+                    one = requests.post(
+                        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+                        headers={"x-goog-api-key": key}, timeout=70,
+                        json={"contents": [{"parts": [{"text": (
+                            "次のニュース見出し1件だけを根拠に、日本語で80字以内の要点をJSONで返してください。"
+                            "見出しにない事実や数値を補わず、他の記事には言及しないでください。"
+                            "形式: {\"summary\":\"...\"}\n見出し: " + item["title"]
+                        )}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}},
+                    )
+                    one.raise_for_status()
+                    summary = json.loads(one.json()["candidates"][0]["content"]["parts"][0]["text"]).get("summary")
+                    if isinstance(summary, str) and summary.strip():
+                        item["summary"] = summary.strip()[:160]
+                except (requests.RequestException, ValueError, KeyError, IndexError, TypeError) as exc:
+                    print(f"Single-headline summary unavailable: {type(exc).__name__}")
         return output, None
     except requests.HTTPError as exc:
         status = "unknown"
