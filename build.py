@@ -7,6 +7,7 @@ import html
 import json
 import os
 import re
+import time
 from pathlib import Path
 from urllib.parse import quote, parse_qs, urlsplit
 
@@ -172,6 +173,27 @@ def article_body(item):
     return item
 
 
+def generate_json(key, prompt):
+    """Retry temporary API outages instead of publishing a blank explanation."""
+    for attempt in range(4):
+        try:
+            response = requests.post(
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+                headers={"x-goog-api-key": key}, timeout=70,
+                json={"contents": [{"parts": [{"text": prompt}]}],
+                      "generationConfig": {"responseMimeType": "application/json", "temperature": 0}},
+            )
+            if response.status_code in (429, 500, 502, 503, 504) and attempt < 3:
+                time.sleep((2, 5, 10)[attempt])
+                continue
+            response.raise_for_status()
+            return json.loads(response.json()["candidates"][0]["content"]["parts"][0]["text"])
+        except requests.RequestException:
+            if attempt == 3:
+                raise
+            time.sleep((2, 5, 10)[attempt])
+
+
 def summarize(sections):
     def headlines_only():
         return {section: [{k: v for k, v in item.items() if k != "excerpt"}
@@ -191,13 +213,7 @@ def summarize(sections):
               "\"stocks\":[],\"crypto\":[],\"ai\":[]} の形で返してください。"
               "indexは各部門の入力配列の0始まりの番号です。\n" + json.dumps(payload, ensure_ascii=False))
     try:
-        result = requests.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
-            headers={"x-goog-api-key": key}, timeout=70,
-            json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}},
-        )
-        result.raise_for_status()
-        parsed = json.loads(result.json()["candidates"][0]["content"]["parts"][0]["text"])
+        parsed = generate_json(key, prompt)
         output = {}
         for section, items in sections.items():
             selected = []
@@ -247,13 +263,7 @@ def summarize(sections):
                         f"{('記事本文' if long_form else '配信文の抜粋')}: "
                         f"{evidence if evidence else '取得できず。見出しのみを根拠とし、contextはnull。'}"
                     )
-                    one = requests.post(
-                        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
-                        headers={"x-goog-api-key": key}, timeout=70,
-                        json={"contents": [{"parts": [{"text": instruction}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0}},
-                    )
-                    one.raise_for_status()
-                    parsed_one = json.loads(one.json()["candidates"][0]["content"]["parts"][0]["text"])
+                    parsed_one = generate_json(key, instruction)
                     point = parsed_one.get("point")
                     context = parsed_one.get("context")
                     if isinstance(point, str) and point.strip():
@@ -319,6 +329,11 @@ def main():
     if not any(collected.values()):
         raise RuntimeError("All news feeds failed; keep the existing edition instead")
     selected, notice = summarize(collected)
+    existing_path = DATA / f"{TODAY}.json"
+    if notice and existing_path.exists():
+        previous = json.loads(existing_path.read_text(encoding="utf-8"))
+        if not previous.get("notice") and any(item.get("point") for items in previous.get("sections", {}).values() for item in items):
+            selected, notice = previous["sections"], None
     edition = {"date": TODAY.isoformat(), "updated_at": NOW.isoformat(), "notice": notice, "sections": selected}
     (DATA / f"{TODAY}.json").write_text(json.dumps(edition, ensure_ascii=False, indent=2), encoding="utf-8")
     cutoff = TODAY - dt.timedelta(days=29)
