@@ -1,154 +1,134 @@
 {
   "date": "2026-09-23",
-  "updated_at": "2026-09-23T18:51:37.281814+09:00",
-  "notice": null,
+  "updated_at": "2026-09-23T19:08:25.716693+09:00",
+  "notice": "要約を取得できなかったため、出典付き見出しを表示しています。",
   "sections": {
     "general": [
       {
         "title": "日米首脳会談、中国について「率直な意見交換」と高市首相",
-        "url": "https://www.msn.com/ja-jp/news/other/%E6%97%A5%E7%B1%B3%E9%A6%96%E8%84%B3%E4%BC%9A%E8%AB%87-%E4%B8%AD%E5%9B%BD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-%E7%8E%87%E7%9B%B4%E3%81%AA%E6%84%8F%E8%A6%8B%E4%BA%A4%E6%8F%9B-%E3%81%A8%E9%AB%98%E5%B8%82%E9%A6%96%E7%9B%B8/ar-AA2cN1lk",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91WWN5ekdJdlc4cnd3SDNZSFhJSE9lUEp1NmJfdzBfblB6YjJhcmg1dnpXWWlSSXQ3WWlya2RPRFVYV3FtdmNlenJzSG9hUEhYQzh0YVhVaEl5UWtrZVlpWlhJQnFfS3FhbzlEREVERS14b1huc3JURzJpeGFMdlE?oc=5",
         "source": "Reuters",
-        "published": "2026-09-23T11:15:00+09:00",
-        "point": "高市早苗首相が国連総会出席のため訪問中の米ニューヨークでトランプ米大統領と会談し、中国や北朝鮮に関する課題について率直な意見交換を行ったと明かした。",
-        "context": "経済安全保障分野において、AIや半導体、重要鉱物などの技術競争で優位性を確保し、サプライチェーンの強靭性を高めるための協力関係を確認したことが注目されている。"
+        "published": "2026-09-23T11:15:00+09:00"
       },
       {
         "title": "高市首相、米中首脳会談念頭にトランプ氏と意見交換 ＩＣＣでもやり取り",
-        "url": "https://www.newsweekjapan.jp/articles/-/334826?display=b",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11RHhoaFNSMHc5REwteUxpVVBvRWQyWXMxMzdJT1ZKN2t1dmZWT0RCZUc4c00yQkl4emVXZVBjQ1RKdW1YcHhxUXBibndNMjlPSTRkZ2FnZ1c3cmJGZVdoVTFXYmNVX2ppTEhFdkp3QnV5SjNHRkdDd3RLMWlmV2c?oc=5",
         "source": "Reuters",
-        "published": "2026-09-23T13:31:00+09:00",
-        "point": "高市早苗首相は米国訪問中、トランプ大統領と会談し、米中首脳会談を念頭に中国をめぐる諸課題について意見交換を行ったと明らかにした。",
-        "context": "高市首相は、このタイミングでの会談が日米同盟の強さを世界に示すものになったと述べた。また、米中関係が日本を含む国際社会の安定に資するものとなることを期待する考えを示した。"
+        "published": "2026-09-23T13:31:00+09:00"
       },
       {
         "title": "高市首相、国連演説でＩＣＣに言及 国際情勢の緊迫化に「三つの柱」提唱 | ロイター",
-        "url": "https://news.yahoo.co.jp/articles/1f71e4565e8e4754c4802662f33ef734aa097ea7",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUmFPcHpzdGxxS0lLeEdTZ0NWTnp6bE91eUZZbHAtR2dXNnV2czJFRDdBN0lfNm1UamJNWS1QMWZjVFlXSTdCS3g1ZUJSNzJldXZQcWNBOERORTRHZzUwaHlpRUNqbWVBeEtTU0ExUHZfaUx4SkxQNFVVaXFFOGNXbmRnT1U?oc=5",
         "source": "Reuters",
-        "published": "2026-09-23T08:51:32+09:00",
-        "point": "高市早苗首相が国連総会の一般討論演説に臨み、国際情勢の緊迫化に対応するための「三つの柱」を提唱した。",
-        "context": "地政学的対立の先鋭化により、自由な交易やエネルギー供給が脅かされている現状を指摘。その上で、国際刑事裁判所（ICC）などを例に挙げ、国際裁判所と法の支配の重要性を支持する日本の姿勢を強調した。"
+        "published": "2026-09-23T08:51:32+09:00"
       },
       {
         "title": "ロシア・サウジ首脳が電話会談、海峡の安全確保を強調 | ロイター",
-        "url": "https://www.reuters.com/jp/world/us/XJODKVMC75IA5I6O2RDBTBYKNM-2026-09-22/",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15U2NFY2xNQlNnSkZuT1ZacVZpSjZBMGZyaWVXdXBwdFQ0cUlTMThSVmQ1LUtER0VfVE92bUppYTVaMUdYZVJuVzNaLXg2TVFVeE9hRWs0Uktfb3BnVXBzbjNQajFUMDNDcUU1dHpwdDZBUU0waFhTOENXVzItTW8?oc=5",
         "source": "Reuters",
-        "published": "2026-09-22T23:21:47+09:00",
-        "point": "ロシアのプーチン大統領とサウジアラビアのムハンマド皇太子が電話会談を行い、バベルマンデブ海峡とホルムズ海峡における航行の安全確保の重要性を強調した。"
+        "published": "2026-09-22T23:21:47+09:00"
       },
       {
         "title": "中国、軍制服組幹部2人の党籍剥奪 重大な規律・法律違反 | ロイター",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRUd5X1NoUEdST1oxaWJZaFpWTm9FQzZKQ3BnQlF6OEk5YjhWMGwyTmRoRXBVaEpoSlRZMHdwSWRLOVY4QWRqUzRGNkd2eGxQaWpBcXFwQmRLeVBMVG9tMGFfMmhLMzBIb0gyYjJFTXlGdW4wMWRjVkJlZXdSZkVIT19YZTZiTUE?oc=5",
         "source": "Reuters",
-        "published": "2026-09-21T21:05:30+09:00",
-        "point": "中国共産党は、軍の制服組幹部2人に対し、重大な規律および法律違反があったとして党籍剥奪の処分を下した。"
+        "published": "2026-09-21T21:05:30+09:00"
       }
     ],
     "stocks": [
       {
-        "title": "米国株、ダウ一進一退で始まる 原油安支えにハイテクは高い",
-        "url": "https://www.nikkei.com/article/DGXZQOFL2221H0S6A920C2000000/",
-        "source": "日本経済新聞",
-        "published": "2026-09-23T01:07:00+09:00",
-        "point": "22日の米株式市場でダウ平均は一進一退で始まり、午前9時40分現在は前日比85ドル高の5万2134ドルで推移している。",
-        "context": "原油先物相場の下落が株式相場を支える一方、ディフェンシブ株などが売られ、ダウ平均が一時下落に転じる場面もあった。"
+        "title": "SBI証券のランキングで「FANG+」が順位を下げ、「世界のベスト」「WCM」が上昇した背景は？",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DSE5RT1lrTk05b0ZHNGloekFRN0hnOG0yTXFGTWdhT21fMEVPTlFudGtKdTdNNzJtd2R6WXozaWw4c3ptS3pjVlRXajFueWdIRFdhS1dOd1FId0VBbXo5ZEFRTEYwVHhSbmRGclJlSFJVUHhEYlVkaS11MGxrTlXSAX9BVV95cUxPQ0hOUU9Za05NOW9GRzRpaHpBUTdIZzhtMk1xRk1nYU9tXzBFT05RbnRrSnU3TTcybXdkell6M2lsOHN6bUt6Y1ZUV2oxbnlnSERXYUtXTndRSHdFQW16OWRBUUxGMFR4Um5kRnJSZUhSVVB4RGJVZGktdTBsa05V?oc=5",
+        "source": "ｄメニューニュース",
+        "published": "2026-09-23T07:00:00+09:00"
       },
       {
-        "title": "半導体メモリー株はピークを打ったのか？ 否か？──フィデリティ ...",
-        "url": "https://diamond.jp/zai/articles/-/1073280",
-        "source": "ダイヤモンド・オンライン",
-        "published": "2026-09-23T11:00:00+09:00",
-        "point": "フィデリティの主要ファンド「グロース・オポチュニティ・ファンド」と「コントラファンド」を比較し、AI関連銘柄への投資戦略の違いを分析する記事が公開された。",
-        "context": "両ファンドはAIに対して強気な姿勢で共通しているが、保有する銘柄や半導体関連の扱いにおいて戦略に違いがある。本記事は、市場で注目される人気ファンドの運用方針を比較分析することで、投資家の判断材料を提供することを目的としている。"
+        "title": "S&P500に最大7%の下落リスク、モルガン・スタンレーが警戒",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nZnFNcUpqWm9HbUpsbjU4WUp4REVPZDlIQmZwWUYwS2o0LTI4QmV2bnd4b2o1WDE1UjRMWW0xeUxGMml4LS1nSmpsdl9KTWVJRUpaanZGSmcxNFY2RHBqdloyc9IBaEFVX3lxTE5rN2xPWWZXdXRjd3JxSFI2dUhxQldSRFhMbE5TMmVMTW1PeVhocUc0d2xGdUVJWmJ4TjgweEFLaWdTSnAtejRuNTc2RHZKREY5RGJjQTdrQU9PMHBYQXRfWk5qN0VHZndq?oc=5",
+        "source": "zaikei.co.jp",
+        "published": "2026-09-23T15:43:37+09:00"
       },
       {
-        "title": "【米国市況】ナスダック100最高値、半導体株に買い－円は157円台前半",
-        "url": "https://news.yahoo.co.jp/articles/2fd62899c4b0efa723fe6760c999be9c3e82d1df",
-        "source": "Yahoo!ニュース",
-        "published": "2026-09-22T16:35:00+09:00",
-        "point": "22日の米株式市場で、ナスダック100指数が半導体株の上昇を背景に5営業日続伸し、6月以来となる最高値を更新した。",
-        "context": "イラン戦争終結に向けた外交努力への期待から原油価格が下落しており、これが相場を支える要因の一つとなった。"
+        "title": "相場展望　９月２１日号　米国株：株式相場は中間選挙結果を前に、「様子見ムード」続く可能性　日本株：9月中間期の配当権利取り前にして、海外短期筋が買い攻勢",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE05d1VEZ2ZwUHlwenZhZU9XZUdEbWF3ZWZCbEZtdXFwdVB0VXZTVkI3bDEzSnRsTVdvMTJBR3ZkYU43bXVhblNqZWdUQkxOTEhRV25PalR3My1yOHllZV94d2VyZ9IBaEFVX3lxTFBkbGVra0hmV2d5elAtdll2czljSWxpTm0zc2RnSEg3NXVEcHlYQlZZc2N5ci1vX0tRY0xHOS1UVzVCZnp0TTZSenA5ZUpxaU5mTTRlcDNoTUwzS0RDOWhIdXpxY2xsZzYz?oc=5",
+        "source": "zaikei.co.jp",
+        "published": "2026-09-23T15:38:05+09:00"
       },
       {
-        "title": "米国株見通し：下げ渋りか、長期金利の動向を注視",
-        "url": "https://finance.yahoo.co.jp/news/detail/5e06012099af377305a1bf7baaffde028b7ce6e4",
-        "source": "finance",
-        "published": "2026-09-23T02:00:00+09:00",
-        "point": "前営業日のNY株式市場は主要3指数がまちまち。ダウとS&P500は下落したが、ナスダックはハイテク株への買いが続き、過去最高値を連日更新した。",
-        "context": "欧州金融幹部が銀行業界の先行きに慎重な姿勢を示したことが金融株の売りにつながった一方、米中両国のAIをめぐる協議がハイテク関連株の買いを誘発した。"
+        "title": "米国株市場、FRBのタカ派姿勢には耐性－AI強気論の揺らぎは警戒",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE14VGI0Rmx3UzNyd1lValBLSTlkTkk4QTF1Vzk2MFlPVkJ4N0hlOUNhZW1vLXBnYXMxbDc2RFhaVVBqM2cyUmxIRWM4Tk41MEktYklqSlhQdXVTdGxMUmJObWt0Y9IBaEFVX3lxTE1Cd1VFQmI0NDNVUXR3Z2wyNHdsZVlHcWlnV0duR3B6NXNvN2M1bmJsbFA0a2lIaUVJTjJ6R0lmcWpBX3c2cW8zaERhMFhsRVdNZ19vTGp4dk1yTHZEMzNrR3Y2cHN0VWJx?oc=5",
+        "source": "Infoseek",
+        "published": "2026-09-22T00:23:11+09:00"
       },
       {
-        "title": "日経平均先物、大取の夜間取引で上昇 1790円高の6万6890円",
-        "url": "https://www.nikkei.com/article/DGXZQOFL2300V0T20C26A9000000/",
-        "source": "日本経済新聞",
-        "published": "2026-09-23T08:24:00+09:00",
-        "point": "大阪取引所の夜間取引で日経平均先物が上昇し、12月物は祝日前比1790円高の6万6890円で取引を終えた。"
+        "title": "米国株 まとめ 9月22日：半導体株が上昇する一方、金融株が下落し ...",
+        "url": "https://note.com/future_research/n/n1be461374232",
+        "source": "note",
+        "published": "2026-09-23T12:08:00+09:00"
       }
     ],
     "crypto": [
       {
-        "title": "ビットコイン、ETF流入急増で87,000ドル付近を維持―トランプ・習 ...",
-        "url": "https://jp.investing.com/news/cryptocurrency-news/article-1688637",
-        "source": "Investing.com 日本",
-        "published": "2026-09-23T03:23:00+09:00",
-        "point": "ビットコイン価格が87,000ドル付近で堅調に推移し、8ヶ月ぶりの高値圏を維持した。",
-        "context": "ビットコインの反発は、上場投資信託（ETF）への資金流入が改善したことが主な要因として挙げられている。"
-      },
-      {
-        "title": "「ビットコインは終わった」と予測された主要な局面ごとに、1,000 ...",
-        "url": "https://news.bitcoin.com/ja/crypto-news/bittokoin-wa-owatta-to-yosoku-sareta-shuyona-kyokumen-goto-ni-1000-doru-wa-dorehodo-no-kachi-ga-atta-ka/",
-        "source": "Bitcoin.com News",
-        "published": "2026-09-23T07:04:00+09:00",
-        "point": "2010年以降、ビットコインが「死んだ」と宣言された主要な局面で1,000ドルを投資した場合の現在の価値を検証する記事が公開されました。",
-        "context": "ビットコインは過去に478回「死んだ」と報じられており、フォーブス誌や著名投資家、ECBなどによる過去の否定的な予測のタイミングで投資を行っていた場合の資産推移を振り返る内容となっています。"
-      },
-      {
-        "title": "ビットコイン8.6万ドル、利上げとクラリティー法案頓挫を消化 ...",
-        "url": "https://coinpost.jp/?p=738847",
-        "source": "CoinPost",
-        "published": "2026-09-23T10:34:00+09:00",
-        "point": "ビットコイン価格が8万6,000ドル付近まで上昇し、50週移動平均線を回復した。",
-        "context": "マーケットメイカーのウィンターミュートは、米利上げとクラリティー法案の頓挫という2つの主要な市場材料を投資家が消化したと分析している。市場の動向を読み解く上で、オプション市場の動きが注目されている。"
-      },
-      {
         "title": "CMEグループ、ビットコインキャッシュとユニスワップの先物上場へ",
-        "url": "https://coinpost.jp/?p=738868",
+        "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE53Nlk4QVRidXRVNTRlUi00aUdzYUxlOHdZbmdZNVF0ZEQ3elhjbkNaZ3NyQU4tMVRuWjhGZ256eUN0OTg?oc=5",
         "source": "CoinPost",
-        "published": "2026-09-23T12:02:52+09:00",
-        "point": "米CMEグループは、10月19日より暗号資産のビットコインキャッシュ（BCH）とユニスワップ（UNI）の先物を上場すると発表した。",
-        "context": "規制当局の審査を経て実施される見通しであること以外、背景や影響に関する記述は配信文に含まれていない。"
+        "published": "2026-09-23T12:02:52+09:00"
+      },
+      {
+        "title": "ビットコインが8カ月ぶり高値の8万7000ドルを突破、仮想通貨相場の急騰でショート約10億ドルが強制清算",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01cmYxUWhrZ1ZnVnczUVpzbUV0QjA3bEhIa3EwZWp1Z1RlODRYRkVmQ3pWbnNvUUJkY3lTSkpRQkw0Z3VpcVhCTFVIb18yelBJMkhfbFljU09PTFI5eUo1T29yZ0JiQXludFdYeFRhODltdThm?oc=5",
+        "source": "BigGo ファイナンス",
+        "published": "2026-09-23T03:26:00+09:00"
       },
       {
         "title": "NEAR、Ondoと提携：暗号資産に加え、トークン化された米国株やETFの提供を開始",
         "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9DeXlRT2hyczJUcFhDelBvNkIzU1Q0amtlV2w2YjR0WEdJbkVtdTlhYmpYUGhweEU3d0Q1QS1SY3J1VVE?oc=5",
         "source": "nextmoney.jp",
-        "published": "2026-09-23T16:15:04+09:00",
-        "point": "NEARプロトコルがOndo Financeと提携し、トークン化された米国株やETFの提供を開始しました。"
+        "published": "2026-09-23T16:15:04+09:00"
+      },
+      {
+        "title": "ビットコインが8カ月ぶりの高値を更新。「仮想通貨の冬」は終わったのか？",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVlpBRnNTLUNBdkQ5UXByWk4zVWlQczdlUEhsald3X1U0NVpmaWtPY2ZTOUxDWkdlN0h3Wks1VkxsX3lYQ0hmbzlDV200emRFMlBadlBlaDZNZ0Z3bHJFUGFxUG1JQk1tbTN2ZzRfOUdWcjN6NFJxbHp2b2lFVmtFajZDbDV4UQ?oc=5",
+        "source": "Vietnam.vn",
+        "published": "2026-09-22T23:08:44+09:00"
+      },
+      {
+        "title": "PA日報 | ビットコイン現物ETFは昨日9.99億ドルの純流入；Xプラットフォームがリアルタイム株式・暗号資産相場表示機能を開始",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMeTN2S3JSakd0TWN6TjFCWWp5OWZGZXNDZ0FGVUg0SXZvaThoUG5sdDJ3eUpRZGhSUkd3enlRdlJaMUp4c0R3VGxEMWZPTTdDUUpPZENIN0dZVXMzRWsyWmRJcnEtaE4yQ3JMTVMyUThGeGtDMjVqUlR6Ujd6WkU?oc=5",
+        "source": "PANews",
+        "published": "2026-09-22T19:18:14+09:00"
       }
     ],
     "ai": [
       {
+        "title": "AWS、オープンソースAIエージェント「Strands Harness」を公開",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZlByM2h4cldDTlRSLWRXQXdCdUYxTFFGN3dFYjBCN19tT2FGVWhnNzRmeG5Gd2ExSy1OYTFsZUpRdFZoSFo0bGZHUHM5b29TRzN6ZkNDN3pyRGZVb05FZklSdXJleDRwT1l6MjFhdzIxeFRFbDBwZ3lZT05YTzBzN2UxYldqazltV2drOEU5UGNXQ090b2xjUkw5TGxrWE8yZHVPTmY4U1pRNElpMS1mUA?oc=5",
+        "source": "디지털투데이",
+        "published": "2026-09-22T05:17:10+09:00"
+      },
+      {
         "title": "Anthropic、「Claude Opus 5.5」公開 Fable 5.1並みの性能で利用コスト4割減",
         "url": "https://www.itmedia.co.jp/news/article/2609/23/2000001673/",
         "source": "ITmedia",
-        "published": "2026-09-23T08:57:00+09:00",
-        "point": "Anthropicは新モデル「Claude Opus 5.5」を発表した。Fable 5.1並みの性能を維持しつつ、利用コストをOpus 5から約4割削減し、有料プランとAPIで提供を開始した。",
-        "context": "アモデイCEOによる開発ペース調整の言及後、初のモデル発表となる。外部機関METRによる事前評価を経て、Fable 5.1と同等クラスのセーフガードが適用されている点が注目される。"
+        "published": "2026-09-23T08:57:00+09:00"
       },
       {
-        "title": "AWS、オープンソースAIエージェント「Strands Harness」を公開",
-        "url": "https://www.digitaltoday.co.kr/jp/view/106174/aws-launches-open-source-ai-agent-strands-harness-for-multi-cloud",
-        "source": "디지털투데이",
-        "published": "2026-09-22T05:17:10+09:00",
-        "point": "AWSは、ローカルからクラウドまで同一構成で実行可能なオープンソースのAIエージェント「Strands Harness」を公開した。",
-        "context": "AIエージェントのプロトタイプ開発からクラウド環境での本番展開までを円滑にすることを目的としており、開発環境と本番環境の移行における利便性向上が期待される。"
-      },
-      {
-        "title": "辞任投稿は1.5億回表示——Anthropic・OpenAIのCEOが同時に「減速」を ...",
-        "url": "https://note.com/ai_curator/n/n2eee895d12a9",
+        "title": "Anthropic、新モデル「Opus 5.5」を発表。Fable 5.1同等性能を4割安で実現 ...",
+        "url": "https://note.com/yarxaria/n/n8c9a1a56363d",
         "source": "note",
-        "published": "2026-09-22T16:30:00+09:00",
-        "point": "Anthropicを退職したジェイコブ・コクソン氏が、OpenAIとAnthropicの両社が責任ある行動を取っていないとXに投稿し、1.5億回以上表示されるなど大きな反響を呼んでいる。",
-        "context": "同氏は両社で3年間事前学習の研究に従事していた人物であり、退職の報告とともにAI開発の安全性や責任ある行動に対する懸念を表明したことが、AI業界の現状に対する議論を呼ぶ要因となっている。"
+        "published": "2026-09-23T07:29:00+09:00"
+      },
+      {
+        "title": "Anthropic、「Claude Opus 5.5」を発表 ～「Fable 5.1」並みの性能、コストは ...",
+        "url": "https://www.msn.com/ja-jp/news/other/anthropic-claude-opus-55-%E3%82%92%E7%99%BA%E8%A1%A8-fable-51-%E4%B8%A6%E3%81%BF%E3%81%AE%E6%80%A7%E8%83%BD-%E3%82%B3%E3%82%B9%E3%83%88%E3%81%AF-opus-5-%E6%AF%944%E5%89%B2%E6%B8%9B-5%E6%99%82%E9%96%93%E3%81%82%E3%81%9F%E3%82%8A%E3%81%AE%E5%88%A9%E7%94%A8%E4%B8%8A%E9%99%90%E3%82%92%E5%BC%95%E3%81%8D%E4%B8%8A%E3%81%92-%E5%A5%BD%E3%81%8D%E3%81%AA%E3%81%A8%E3%81%8D%E3%81%AB%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%AC%E3%83%BC%E3%83%88%E5%88%B6%E9%99%90%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%82%E6%8F%90%E4%BE%9B/ar-AA2cMRwU",
+        "source": "窓の杜 on MSN",
+        "published": "2026-09-23T04:19:38+09:00"
+      },
+      {
+        "title": "AnthropicがAIモデル「Claude Opus 5.5」を発表、Opus 5よりコスト40％減・30 ...",
+        "url": "https://www.msn.com/ja-jp/technology/artificial-intelligence/anthropic%E3%81%8Cai%E3%83%A2%E3%83%87%E3%83%AB-claude-opus-5-5-%E3%82%92%E7%99%BA%E8%A1%A8-opus-5%E3%82%88%E3%82%8A%E3%82%B3%E3%82%B9%E3%83%8840-%E6%B8%9B-30-%E4%BB%A5%E4%B8%8A%E9%AB%98%E9%80%9F%E5%8C%96%E3%81%97%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%80%A7%E8%83%BD%E3%82%82%E5%90%91%E4%B8%8A/ar-AA2cN75g",
+        "source": "GIGAZINE on MSN",
+        "published": "2026-09-23T07:30:00+09:00"
       }
     ]
   }
