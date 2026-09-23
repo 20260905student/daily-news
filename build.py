@@ -63,8 +63,8 @@ def summarize(sections):
               "indexは各部門の入力配列の0始まりの番号です。\n" + json.dumps(payload, ensure_ascii=False))
     try:
         result = requests.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-            params={"key": key}, timeout=70,
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+            headers={"x-goog-api-key": key}, timeout=70,
             json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}},
         )
         result.raise_for_status()
