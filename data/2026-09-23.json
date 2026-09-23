@@ -1,52 +1,52 @@
 {
   "date": "2026-09-23",
-  "updated_at": "2026-09-23T15:16:25.117139+09:00",
-  "notice": "要約を取得できなかったため、出典付き見出しを表示しています。",
+  "updated_at": "2026-09-23T15:23:22.091898+09:00",
+  "notice": null,
   "sections": {
     "general": [
       {
         "title": "日米首脳会談、中国について「率直な意見交換」と高市首相",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91WWN5ekdJdlc4cnd3SDNZSFhJSE9lUEp1NmJfdzBfblB6YjJhcmg1dnpXWWlSSXQ3WWlya2RPRFVYV3FtdmNlenJzSG9hUEhYQzh0YVhVaEl5UWtrZVlpWlhJQnFfS3FhbzlEREVERS14b1huc3JURzJpeGFMdlE?oc=5",
         "source": "Reuters",
-        "published": "2026-09-23T11:15:00+09:00"
+        "published": "2026-09-23T11:15:00+09:00",
+        "summary": "高市首相が日米首脳会談で中国について率直な意見交換を行ったほか、トランプ氏とも意見交換を実施しました。"
       },
       {
         "title": "高市首相、米中首脳会談念頭にトランプ氏と意見交換 ＩＣＣでもやり取り",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11RHhoaFNSMHc5REwteUxpVVBvRWQyWXMxMzdJT1ZKN2t1dmZWT0RCZUc4c00yQkl4emVXZVBjQ1RKdW1YcHhxUXBibndNMjlPSTRkZ2FnZ1c3cmJGZVdoVTFXYmNVX2ppTEhFdkp3QnV5SjNHRkdDd3RLMWlmV2c?oc=5",
         "source": "Reuters",
-        "published": "2026-09-23T13:31:00+09:00"
+        "published": "2026-09-23T13:31:00+09:00",
+        "summary": "高市首相は国連演説で国際情勢の緊迫化に触れ、ICCへの言及や「三つの柱」の提唱を行いました。"
       },
       {
         "title": "高市首相、国連演説でＩＣＣに言及 国際情勢の緊迫化に「三つの柱」提唱 | ロイター",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUmFPcHpzdGxxS0lLeEdTZ0NWTnp6bE91eUZZbHAtR2dXNnV2czJFRDdBN0lfNm1UamJNWS1QMWZjVFlXSTdCS3g1ZUJSNzJldXZQcWNBOERORTRHZzUwaHlpRUNqbWVBeEtTU0ExUHZfaUx4SkxQNFVVaXFFOGNXbmRnT1U?oc=5",
         "source": "Reuters",
-        "published": "2026-09-23T08:51:32+09:00"
+        "published": "2026-09-23T08:51:32+09:00",
+        "summary": "中国で軍制服組幹部2人が重大な規律・法律違反により党籍を剥奪される処分が下されました。"
       },
       {
         "title": "ロシア・サウジ首脳が電話会談、海峡の安全確保を強調 | ロイター",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15U2NFY2xNQlNnSkZuT1ZacVZpSjZBMGZyaWVXdXBwdFQ0cUlTMThSVmQ1LUtER0VfVE92bUppYTVaMUdYZVJuVzNaLXg2TVFVeE9hRWs0Uktfb3BnVXBzbjNQajFUMDNDcUU1dHpwdDZBUU0waFhTOENXVzItTW8?oc=5",
         "source": "Reuters",
-        "published": "2026-09-22T23:21:47+09:00"
-      },
-      {
-        "title": "中国、軍制服組幹部2人の党籍剥奪 重大な規律・法律違反 | ロイター",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRUd5X1NoUEdST1oxaWJZaFpWTm9FQzZKQ3BnQlF6OEk5YjhWMGwyTmRoRXBVaEpoSlRZMHdwSWRLOVY4QWRqUzRGNkd2eGxQaWpBcXFwQmRLeVBMVG9tMGFfMmhLMzBIb0gyYjJFTXlGdW4wMWRjVkJlZXdSZkVIT19YZTZiTUE?oc=5",
-        "source": "Reuters",
-        "published": "2026-09-21T21:05:30+09:00"
+        "published": "2026-09-22T23:21:47+09:00",
+        "summary": "ロシアとサウジアラビアの首脳が電話会談を行い、海峡の安全確保を強調しました。"
       }
     ],
     "stocks": [
       {
         "title": "SBI証券のランキングで「FANG+」が順位を下げ、「世界のベスト」「WCM」が上昇した背景は？",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DSE5RT1lrTk05b0ZHNGloekFRN0hnOG0yTXFGTWdhT21fMEVPTlFudGtKdTdNNzJtd2R6WXozaWw4c3ptS3pjVlRXajFueWdIRFdhS1dOd1FId0VBbXo5ZEFRTEYwVHhSbmRGclJlSFJVUHhEYlVkaS11MGxrTlXSAX9BVV95cUxPQ0hOUU9Za05NOW9GRzRpaHpBUTdIZzhtMk1xRk1nYU9tXzBFT05RbnRrSnU3TTcybXdkell6M2lsOHN6bUt6Y1ZUV2oxbnlnSERXYUtXTndRSHdFQW16OWRBUUxGMFR4Um5kRnJSZUhSVVB4RGJVZGktdTBsa05V?oc=5",
-        "source": "topics.smt.docomo.ne.jp",
-        "published": "2026-09-23T07:00:00+09:00"
+        "source": "ｄメニューニュース",
+        "published": "2026-09-23T07:00:00+09:00",
+        "summary": "米国株市場ではFRBのタカ派姿勢への耐性が示される一方、AI関連の強気論に対する警戒感も浮上しています。"
       },
       {
         "title": "米国株市場、FRBのタカ派姿勢には耐性－AI強気論の揺らぎは警戒",
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE14VGI0Rmx3UzNyd1lValBLSTlkTkk4QTF1Vzk2MFlPVkJ4N0hlOUNhZW1vLXBnYXMxbDc2RFhaVVBqM2cyUmxIRWM4Tk41MEktYklqSlhQdXVTdGxMUmJObWt0Y9IBaEFVX3lxTE1Cd1VFQmI0NDNVUXR3Z2wyNHdsZVlHcWlnV0duR3B6NXNvN2M1bmJsbFA0a2lIaUVJTjJ6R0lmcWpBX3c2cW8zaERhMFhsRVdNZ19vTGp4dk1yTHZEMzNrR3Y2cHN0VWJx?oc=5",
         "source": "Infoseek",
-        "published": "2026-09-22T00:23:11+09:00"
+        "published": "2026-09-22T00:23:11+09:00",
+        "summary": "SBI証券のランキングで「FANG+」が順位を下げ、「世界のベスト」や「WCM」が上昇する動きが見られました。"
       }
     ],
     "crypto": [
@@ -54,31 +54,36 @@
         "title": "CMEグループ、ビットコインキャッシュとユニスワップの先物上場へ",
         "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE53Nlk4QVRidXRVNTRlUi00aUdzYUxlOHdZbmdZNVF0ZEQ3elhjbkNaZ3NyQU4tMVRuWjhGZ256eUN0OTg?oc=5",
         "source": "CoinPost",
-        "published": "2026-09-23T12:02:52+09:00"
+        "published": "2026-09-23T12:02:52+09:00",
+        "summary": "ビットコインが8万7000ドルを突破し8カ月ぶりの高値を更新。急騰により約10億ドルのショートが強制清算されました。"
       },
       {
         "title": "ビットコインが8カ月ぶり高値の8万7000ドルを突破、仮想通貨相場の急騰でショート約10億ドルが強制清算",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01cmYxUWhrZ1ZnVnczUVpzbUV0QjA3bEhIa3EwZWp1Z1RlODRYRkVmQ3pWbnNvUUJkY3lTSkpRQkw0Z3VpcVhCTFVIb18yelBJMkhfbFljU09PTFI5eUo1T29yZ0JiQXludFdYeFRhODltdThm?oc=5",
         "source": "BigGo ファイナンス",
-        "published": "2026-09-23T03:26:00+09:00"
+        "published": "2026-09-23T03:26:00+09:00",
+        "summary": "ビットコイン現物ETFに約10億ドルの純流入が記録され、市場の活況が続いています。"
       },
       {
         "title": "PA日報 | ビットコイン現物ETFは昨日9.99億ドルの純流入；Xプラットフォームがリアルタイム株式・暗号資産相場表示機能を開始",
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMeTN2S3JSakd0TWN6TjFCWWp5OWZGZXNDZ0FGVUg0SXZvaThoUG5sdDJ3eUpRZGhSUkd3enlRdlJaMUp4c0R3VGxEMWZPTTdDUUpPZENIN0dZVXMzRWsyWmRJcnEtaE4yQ3JMTVMyUThGeGtDMjVqUlR6Ujd6WkU?oc=5",
-        "source": "PANews",
-        "published": "2026-09-22T19:18:14+09:00"
+        "source": "panewslab.com",
+        "published": "2026-09-22T19:18:14+09:00",
+        "summary": "CMEグループがビットコインキャッシュとユニスワップの先物上場を決定しました。"
       },
       {
         "title": "ビットコインが8カ月ぶりの高値を更新。「仮想通貨の冬」は終わったのか？",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVlpBRnNTLUNBdkQ5UXByWk4zVWlQczdlUEhsald3X1U0NVpmaWtPY2ZTOUxDWkdlN0h3Wks1VkxsX3lYQ0hmbzlDV200emRFMlBadlBlaDZNZ0Z3bHJFUGFxUG1JQk1tbTN2ZzRfOUdWcjN6NFJxbHp2b2lFVmtFajZDbDV4UQ?oc=5",
         "source": "Vietnam.vn",
-        "published": "2026-09-22T23:08:44+09:00"
+        "published": "2026-09-22T23:08:44+09:00",
+        "summary": "バイナンスが米サークル社に1億ドルを出資し、USDC普及に向けた5年契約を締結しました。"
       },
       {
         "title": "バイナンス、米サークルに1億ドル出資｜USDC普及で5年契約",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcHQzQnpVQzA5bjRQdGtLaTZCWDVwY1N6cG8tbzlEWmxfSVBTMGpFTzktRTI4NlFEMWJaQmtOdHJtb0ZRc2ZwWk4wSTJON3dSZ2FnSjRhdllXQkVoN1lZRm94UmxfZnlLejh1QWcxSFF4SXIyNHliZFFkazk5TjlZYjRR?oc=5",
         "source": "99Bitcoins",
-        "published": "2026-09-23T12:24:58+09:00"
+        "published": "2026-09-23T12:24:58+09:00",
+        "summary": "BitMEXが23日に閉鎖される予定であり、資産を残した場合は手数料が徴収される可能性があります。"
       }
     ],
     "ai": [
@@ -86,7 +91,8 @@
         "title": "AWS、オープンソースAIエージェント「Strands Harness」を公開",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZlByM2h4cldDTlRSLWRXQXdCdUYxTFFGN3dFYjBCN19tT2FGVWhnNzRmeG5Gd2ExSy1OYTFsZUpRdFZoSFo0bGZHUHM5b29TRzN6ZkNDN3pyRGZVb05FZklSdXJleDRwT1l6MjFhdzIxeFRFbDBwZ3lZT05YTzBzN2UxYldqazltV2drOEU5UGNXQ090b2xjUkw5TGxrWE8yZHVPTmY4U1pRNElpMS1mUA?oc=5",
         "source": "디지털투데이",
-        "published": "2026-09-22T05:17:10+09:00"
+        "published": "2026-09-22T05:17:10+09:00",
+        "summary": "AWSがオープンソースのAIエージェント「Strands Harness」を公開しました。"
       }
     ]
   }
