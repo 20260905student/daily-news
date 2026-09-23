@@ -2,6 +2,7 @@
 import datetime as dt
 import calendar
 from concurrent.futures import ThreadPoolExecutor
+from difflib import SequenceMatcher
 import html
 import json
 import os
@@ -41,6 +42,19 @@ def clean_excerpt(value):
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"[\u200b-\u200d\u2060\ufeff]", "", html.unescape(value))
     return re.sub(r"\s+", " ", value).strip()[:1600]
+
+
+def same_story(first, second):
+    """Catch syndicated or near-identical headlines about the same announcement."""
+    import unicodedata
+    a = unicodedata.normalize("NFKC", first).casefold()
+    b = unicodedata.normalize("NFKC", second).casefold()
+    model = re.compile(r"([a-z][a-z0-9-]{2,})\s*(\d+(?:\.\d+)?)")
+    ids_a = set(model.findall(a))
+    ids_b = set(model.findall(b))
+    if ids_a and ids_a & ids_b:
+        return True
+    return SequenceMatcher(None, normalized(a), normalized(b)).ratio() > 0.78
 
 
 def collect_bing(section):
@@ -144,6 +158,7 @@ def summarize(sections):
                for section, items in sections.items()}
     prompt = ("次の日本語ニュース見出しから、4部門それぞれ重要度順に5件ずつ選んでください。"
               "分野に合う記事が5件未満の場合だけ件数を減らしてください。"
+              "同じ出来事や同じ製品発表を扱う複数媒体の記事は重複させず、異なる話題を選んでください。"
               "同程度に重要ならhas_excerptがtrueの記事を優先し、見出しだけで詳細がわからないものは避けてください。"
               "JSONで {\"general\":[{\"index\":0}],"
               "\"stocks\":[],\"crypto\":[],\"ai\":[]} の形で返してください。"
@@ -162,11 +177,18 @@ def summarize(sections):
             used = set()
             for row in parsed.get(section, []):
                 index = row.get("index")
-                if type(index) is int and 0 <= index < len(items) and index not in used:
+                if (type(index) is int and 0 <= index < len(items) and index not in used
+                        and not any(same_story(items[index]["title"], earlier["title"]) for earlier in selected)):
                     used.add(index)
                     selected.append(items[index].copy())
                 if len(selected) >= 5:
                     break
+            for item in sorted(items, key=lambda item: (not bool(item.get("excerpt")),
+                                                       -dt.datetime.fromisoformat(item["published"]).timestamp())):
+                if len(selected) >= 5:
+                    break
+                if not any(same_story(item["title"], earlier["title"]) for earlier in selected):
+                    selected.append(item.copy())
             output[section] = selected or items[:5]
         # Fetch evidence in parallel; keep each excerpt attached to its own title.
         chosen = [item for items in output.values() for item in items if not item.get("excerpt")]
