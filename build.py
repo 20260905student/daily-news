@@ -83,6 +83,14 @@ def summarize(sections):
                     break
             output[section] = selected or items[:5]
         return output, None
+    except requests.HTTPError as exc:
+        status = "unknown"
+        try:
+            status = exc.response.json().get("error", {}).get("status", "unknown")
+        except ValueError:
+            pass
+        print(f"Summary unavailable: HTTP {exc.response.status_code} ({status})")
+        return {section: items[:5] for section, items in sections.items()}, "要約を取得できなかったため、出典付き見出しを表示しています。"
     except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
         print(f"Summary unavailable: {type(exc).__name__}")
         return {section: items[:5] for section, items in sections.items()}, "要約を取得できなかったため、出典付き見出しを表示しています。"
