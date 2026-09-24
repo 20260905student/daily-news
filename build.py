@@ -313,10 +313,13 @@ def simplify_saved_explanations(key):
                         continue
                     old = item["point"] + " " + (item.get("context") or "")
                     new = point + " " + (context or "")
-                    # Reject rewrites that change or lose figures in financial news.
-                    if sorted(re.findall(r"\d[\d,.]*%?", old)) != sorted(re.findall(r"\d[\d,.]*%?", new)):
+                    # Dates can be phrased more simply; prices, quantities and rates must survive.
+                    figures = r"\d[\d,.]*(?:万|億)?(?:円|ドル|BTC|ETH|%|％)"
+                    if sorted(re.findall(figures, old)) != sorted(re.findall(figures, new)):
                         continue
-                    if not 0.65 <= len(new) / max(len(old), 1) <= 1.4:
+                    if not set(re.findall(r"\d[\d,.]*", new)) <= set(re.findall(r"\d[\d,.]*", old)):
+                        continue
+                    if not 0.6 <= len(new) / max(len(old), 1) <= 1.5:
                         continue
                     item["point"] = point.strip()[:280]
                     if item.get("context"):
