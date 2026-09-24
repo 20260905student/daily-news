@@ -33,6 +33,13 @@ BING_QUERIES = {
     "crypto": ("ビットコイン", "暗号資産"),
     "ai": ("AI", "Anthropic"),
 }
+KNOWN_DEFINITIONS = {
+    "fang+": "米国のテクノロジー関連などの成長企業10銘柄の値動きを、同じ比率で追う株価指数です。",
+    "frb": "米連邦準備制度理事会。米国の中央銀行制度を運営する機関で、金融政策は地区連銀総裁も参加するFOMCで決めます。",
+    "想定元本": "先物やスワップなどの取引で、損益計算の基準に用いる契約上の金額です。実際に支払う金額とは限りません。",
+    "バリュエーション": "株価が企業の利益や資産などと比べて割高か割安かを評価することです。",
+    "重厚長大": "鉄鋼や造船など、設備や原材料を多く必要とする産業の総称です。",
+}
 
 
 def normalized(value):
@@ -208,7 +215,8 @@ def valid_terms(raw, item):
                 2 <= len(term.strip()) <= 35 and 12 <= len(meaning.strip()) <= 100 and
                 term.strip().casefold() in article_text and
                 term.strip().casefold() not in {t["term"].casefold() for t in terms}):
-            terms.append({"term": term.strip(), "meaning": meaning.strip()})
+            terms.append({"term": term.strip(),
+                          "meaning": KNOWN_DEFINITIONS.get(term.strip().casefold(), meaning.strip())})
         if len(terms) == 3:
             break
     return terms
@@ -248,6 +256,22 @@ def backfill_terms(key):
             path.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
         except (requests.RequestException, ValueError, KeyError, IndexError, TypeError) as exc:
             print(f"Glossary backfill unavailable: {type(exc).__name__}")
+
+
+def normalize_saved_terms():
+    """Correct known definitions in retained articles as well as new ones."""
+    for path in DATA.glob("????-??-??.json"):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        changed = False
+        for items in record["sections"].values():
+            for item in items:
+                if "terms" in item:
+                    corrected = valid_terms(item["terms"], item)
+                    if corrected != item["terms"]:
+                        item["terms"] = corrected
+                        changed = True
+        if changed:
+            path.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def summarize(sections):
@@ -374,6 +398,12 @@ def render(edition, dates):
 def main():
     DATA.mkdir(exist_ok=True)
     PUBLIC.mkdir(exist_ok=True)
+    if os.environ.get("GLOSSARY_ONLY") == "true":
+        if os.environ.get("GEMINI_API_KEY"):
+            backfill_terms(os.environ["GEMINI_API_KEY"])
+        normalize_saved_terms()
+        render_archive()
+        return
     collected = {}
     for section, (_, query) in SECTIONS.items():
         try:
@@ -407,6 +437,11 @@ def main():
             path.unlink()
     if os.environ.get("GEMINI_API_KEY"):
         backfill_terms(os.environ["GEMINI_API_KEY"])
+    normalize_saved_terms()
+    render_archive()
+
+
+def render_archive():
     dates = sorted((p.stem for p in DATA.glob("????-??-??.json")), reverse=True)
     archive = PUBLIC / "archive"
     archive.mkdir(exist_ok=True)
