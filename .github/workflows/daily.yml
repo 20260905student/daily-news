@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '35 21 * * *' # 06:35 JST; allow processing before 07:00
   workflow_dispatch:
+    inputs:
+      glossary_only:
+        description: 'Refresh glossary without collecting news'
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -25,6 +30,7 @@ jobs:
       - name: Gather and render
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GLOSSARY_ONLY: ${{ inputs.glossary_only }}
         run: python build.py
       - name: Save the last 30 editions
         run: |
